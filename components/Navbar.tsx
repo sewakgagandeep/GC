@@ -43,9 +43,15 @@ const Navbar: React.FC = () => {
           <a 
             href="#home" 
             onClick={(e) => scrollToSection(e, '#home')}
-            className="text-2xl md:text-3xl font-serif font-bold text-primary tracking-tight"
+            className="flex items-center"
           >
-            {BUSINESS_NAME}
+             <img 
+               src="./logo.png" 
+               alt={BUSINESS_NAME} 
+               className={`object-contain transition-all duration-300 ${
+                 isScrolled ? 'h-14 md:h-16' : 'h-20 md:h-24'
+               }`} 
+             />
           </a>
 
           {/* Desktop Nav */}
