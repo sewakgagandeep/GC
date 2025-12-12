@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             {SUB_TAGLINE.toUpperCase()}
           </span>
 
-          <h1 className="text-5xl md:text-8xl font-serif text-secondary font-bold leading-tight drop-shadow-sm">
+          <h1 className="text-4xl md:text-8xl font-serif text-secondary font-bold leading-tight drop-shadow-sm">
             Gurparsad <br />
             <span className="text-primary">Creations</span>
           </h1>
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
       <a
         href="#about"
         onClick={(e) => scrollToSection(e, '#about')}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-stone-700 hover:text-primary transition-colors cursor-pointer z-20"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-stone-700 hover:text-primary transition-colors cursor-pointer z-20 hidden md:block"
       >
         <ArrowDown size={40} />
       </a>

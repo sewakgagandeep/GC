@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-6'
+      className={`fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2 ${isScrolled ? 'md:bg-white md:shadow-md md:py-2' : 'md:bg-transparent md:shadow-none md:py-6'
         }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
             <img
               src="./logo.png"
               alt={BUSINESS_NAME}
-              className={`object-contain transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-30 md:h-40'
+              className={`object-contain transition-all duration-300 h-20 ${isScrolled ? 'md:h-24' : 'md:h-40'
                 }`}
             />
           </a>

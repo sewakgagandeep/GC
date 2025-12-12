@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <img
             src="./Sticker-Final.png"
             alt={BUSINESS_NAME}
-            className="h-30 md:h-40 object-contain"
+            className="h-20 sm:h-32 md:h-40 object-contain"
           />
         </div>
         <p className="font-serif italic mb-8 text-stone-500">{TAGLINE_PUNJABI}</p>
