@@ -54,7 +54,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 1,
     title: "Classic Vanilla Muffin",
     description: "Soft, fluffy, and freshly baked muffins with a golden top. Perfect for breakfast.",
-    imageUrl: "https://picsum.photos/id/1080/600/400", 
+    imageUrl: "./images/vanilla_muffin.png",
     tags: ["Eggless", "Fresh"],
     category: "Muffins"
   },
@@ -62,7 +62,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 2,
     title: "Marble Muffins",
     description: "The perfect swirl of vanilla and chocolate batter for a delightful treat.",
-    imageUrl: "https://picsum.photos/id/825/600/400",
+    imageUrl: "./images/marble_muffin.png",
     tags: ["Bestseller", "No Premix"],
     category: "Muffins"
   },
@@ -70,7 +70,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 3,
     title: "Rose Swirl Cupcakes",
     description: "Beautifully piped floral designs using our signature homemade buttercream.",
-    imageUrl: "https://picsum.photos/id/431/600/400",
+    imageUrl: "./images/rose_cupcake.png",
     tags: ["Customizable", "Elegant"],
     category: "Cupcakes"
   },
@@ -78,7 +78,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 4,
     title: "Rasmalai Cake",
     description: "A fusion masterpiece. Cardamom spiced sponge soaked in saffron milk, topped with pistachios.",
-    imageUrl: "https://picsum.photos/id/292/600/400",
+    imageUrl: "./images/rasmalai_cake.png",
     tags: ["Fusion", "Premium"],
     category: "Cakes"
   },
@@ -86,7 +86,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 5,
     title: "Chocolate Truffle Cake",
     description: "Decadent, rich chocolate cake with a silky smooth ganache finish. A crowd favorite.",
-    imageUrl: "https://picsum.photos/id/999/600/400",
+    imageUrl: "./images/chocolate_truffle_cake.png",
     tags: ["Rich", "Chocolate Lovers"],
     category: "Cakes"
   },
@@ -94,7 +94,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 6,
     title: "Cake Pops",
     description: "Bite-sized spheres of happiness, dipped in chocolate. Perfect for parties and sweet tables.",
-    imageUrl: "https://picsum.photos/id/488/600/400", 
+    imageUrl: "./images/cake_pops.png",
     tags: ["Kids Favorite", "Parties"],
     category: "Other"
   },
@@ -102,7 +102,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 7,
     title: "Blueberry Muffins",
     description: "Bursting with real blueberries and a hint of lemon zest.",
-    imageUrl: "https://picsum.photos/id/493/600/400",
+    imageUrl: "./images/blueberry_muffins.png",
     tags: ["Fruity", "Breakfast"],
     category: "Muffins"
   },
@@ -110,7 +110,7 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 8,
     title: "Pineapple Fresh Cream Cake",
     description: "Light vanilla sponge layered with fresh dairy cream and pineapple chunks.",
-    imageUrl: "https://picsum.photos/id/106/600/400",
+    imageUrl: "./images/pineapple_cake.png",
     tags: ["Classic", "Fresh"],
     category: "Cakes"
   }

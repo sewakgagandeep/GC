@@ -28,51 +28,49 @@ const Navbar: React.FC = () => {
     { name: 'About', href: '#about' },
     { name: 'Menu', href: '#menu' },
     { name: 'Ask AI', href: '#ai-gen' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-white/90 backdrop-blur-sm py-4'
-      }`}
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             onClick={(e) => scrollToSection(e, '#home')}
             className="flex items-center"
           >
-             <img 
-               src="./logo.png" 
-               alt={BUSINESS_NAME} 
-               className={`object-contain transition-all duration-300 ${
-                 isScrolled ? 'h-14 md:h-16' : 'h-20 md:h-24'
-               }`} 
-             />
+            <img
+              src="./logo.png"
+              alt={BUSINESS_NAME}
+              className={`object-contain transition-all duration-300 ${isScrolled ? 'h-20 md:h-24' : 'h-30 md:h-40'
+                }`}
+            />
           </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
-                className={`text-sm font-bold tracking-wide transition-all duration-300 ${
-                  link.name === 'Contact'
-                    ? 'bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary shadow-md hover:shadow-lg transform hover:-translate-y-0.5'
-                    : 'text-stone-600 hover:text-primary'
-                }`}
+                className={`text-sm font-bold tracking-wide transition-all duration-300 ${link.name === 'Contact'
+                  ? 'bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary shadow-md hover:shadow-lg transform hover:-translate-y-0.5'
+                  : 'text-stone-600 hover:text-primary'
+                  }`}
               >
                 {link.name}
               </a>
             ))}
-            <a 
-              href={CONTACT_INFO.instagramUrl} 
-              target="_blank" 
+            <a
+              href={CONTACT_INFO.instagramUrl}
+              target="_blank"
               rel="noreferrer"
               className="text-primary hover:text-secondary transition-transform hover:scale-110 ml-2"
               aria-label="Instagram"
@@ -83,15 +81,15 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-             <a 
-              href={CONTACT_INFO.instagramUrl} 
-              target="_blank" 
+            <a
+              href={CONTACT_INFO.instagramUrl}
+              target="_blank"
               rel="noreferrer"
               className="text-primary mr-4"
             >
               <Instagram size={24} />
             </a>
-            <button 
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-stone-700 hover:text-primary focus:outline-none"
             >
@@ -106,22 +104,21 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white border-t border-stone-100 absolute w-full shadow-xl animate-in slide-in-from-top-2">
           <div className="flex flex-col px-6 py-6 space-y-4">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
-                className={`text-lg font-medium block ${
-                  link.name === 'Contact' ? 'text-primary font-bold' : 'text-stone-700 hover:text-primary'
-                }`}
+                className={`text-lg font-medium block ${link.name === 'Contact' ? 'text-primary font-bold' : 'text-stone-700 hover:text-primary'
+                  }`}
                 onClick={(e) => scrollToSection(e, link.href)}
               >
                 {link.name}
               </a>
             ))}
             <div className="pt-4 border-t border-stone-100 mt-2">
-               <p className="text-sm text-stone-500 mb-2 uppercase tracking-wider font-bold">Order Now</p>
-               <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center text-secondary font-bold text-xl">
-                 <Phone size={20} className="mr-2 fill-current" /> {CONTACT_INFO.phone}
-               </a>
+              <p className="text-sm text-stone-500 mb-2 uppercase tracking-wider font-bold">Order Now</p>
+              <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center text-secondary font-bold text-xl">
+                <Phone size={20} className="mr-2 fill-current" /> {CONTACT_INFO.phone}
+              </a>
             </div>
           </div>
         </div>

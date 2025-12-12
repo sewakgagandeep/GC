@@ -12,78 +12,68 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-stone-50 pt-16">
-      {/* Background decoration */}
-      <div className="absolute inset-0 z-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-      
-      <div className="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center">
-        
-        {/* Text Content */}
-        <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0 space-y-6">
-          <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-bold text-sm tracking-wider mb-2">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="./hero_background.png"
+          alt="Elegant bakery background"
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay for text readability - lighter for light theme */}
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-[2px]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 z-10 relative text-center">
+        <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in zoom-in duration-1000">
+          <span className="inline-block px-4 py-1 rounded-full bg-white/80 text-primary font-bold text-sm tracking-wider mb-2 shadow-sm backdrop-blur-sm border border-white">
             {SUB_TAGLINE.toUpperCase()}
           </span>
-          
-          <h1 className="text-5xl md:text-7xl font-serif text-secondary font-bold leading-tight">
+
+          <h1 className="text-5xl md:text-8xl font-serif text-secondary font-bold leading-tight drop-shadow-sm">
             Gurparsad <br />
             <span className="text-primary">Creations</span>
           </h1>
 
-          <div className="space-y-2">
-            <p className="text-3xl md:text-4xl text-stone-800 font-serif italic">
+          <div className="space-y-4">
+            <p className="text-3xl md:text-5xl text-stone-800 font-serif italic drop-shadow-sm">
               {TAGLINE_PUNJABI}
             </p>
-            <p className="text-lg md:text-xl text-stone-600 font-sans uppercase tracking-widest">
+            <p className="text-lg md:text-2xl text-stone-700 font-sans uppercase tracking-widest font-semibold">
               {TAGLINE_ENGLISH}
             </p>
           </div>
 
-          <p className="text-stone-600 max-w-lg mx-auto md:mx-0 leading-relaxed">
-            Homemade happiness from Brampton. 100% Vegetarian, 100% Fresh. 
+          <p className="text-stone-800 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium bg-white/40 p-4 rounded-xl backdrop-blur-sm">
+            Homemade happiness from Brampton. 100% Vegetarian, 100% Fresh.
             Experience the taste of purity with our custom cakes and muffins.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-            <a 
-              href="#menu" 
+          <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+            <a
+              href="#menu"
               onClick={(e) => scrollToSection(e, '#menu')}
-              className="px-8 py-3 bg-primary text-white rounded-full font-bold shadow-lg hover:bg-secondary transition-colors duration-300 flex items-center justify-center cursor-pointer"
+              className="px-10 py-4 bg-primary text-white text-lg rounded-full font-bold shadow-xl hover:bg-secondary hover:scale-105 transition-all duration-300 flex items-center justify-center cursor-pointer"
             >
               View Menu
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               onClick={(e) => scrollToSection(e, '#contact')}
-              className="px-8 py-3 border-2 border-secondary text-secondary rounded-full font-bold hover:bg-secondary hover:text-white transition-colors duration-300 flex items-center justify-center cursor-pointer"
+              className="px-10 py-4 bg-white/90 text-secondary text-lg border-2 border-secondary rounded-full font-bold hover:bg-secondary hover:text-white hover:scale-105 transition-all duration-300 flex items-center justify-center cursor-pointer shadow-lg backdrop-blur-sm"
             >
               Order Now
             </a>
           </div>
         </div>
-
-        {/* Hero Image */}
-        <div className="md:w-1/2 flex justify-center relative">
-          <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
-            {/* Decorative circles */}
-            <div className="absolute top-0 right-0 w-full h-full bg-primary/5 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-4 left-4 w-2/3 h-2/3 bg-accent/10 rounded-full"></div>
-            
-            {/* Main Image - Using a placeholder that resembles muffins/cupcakes */}
-            <img 
-              src="https://picsum.photos/id/102/800/800" 
-              alt="Assorted Muffins and Cupcakes" 
-              className="relative z-10 w-full h-full object-cover rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
-            />
-          </div>
-        </div>
       </div>
 
-      <a 
-        href="#about" 
+      <a
+        href="#about"
         onClick={(e) => scrollToSection(e, '#about')}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-stone-400 hover:text-primary transition-colors cursor-pointer"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-stone-700 hover:text-primary transition-colors cursor-pointer z-20"
       >
-        <ArrowDown size={32} />
+        <ArrowDown size={40} />
       </a>
     </section>
   );

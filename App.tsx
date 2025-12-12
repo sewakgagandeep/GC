@@ -8,6 +8,8 @@ import AiIdeaGenerator from './components/AiIdeaGenerator';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import Gallery from './components/Gallery';
+
 function App() {
   return (
     <div className="min-h-screen bg-stone-50">
@@ -18,6 +20,7 @@ function App() {
         <Features />
         <Menu />
         <AiIdeaGenerator />
+        <Gallery />
         <Contact />
       </main>
       <Footer />
