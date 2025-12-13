@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="./hero_background.png"
-          alt="Elegant bakery background"
+          alt="Gurparsad Creations - Eggless Bakery and Homemade Cakes in Brampton"
           className="w-full h-full object-cover"
         />
         {/* Overlay for text readability - lighter for light theme */}

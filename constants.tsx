@@ -8,7 +8,7 @@ export const TAGLINE_ENGLISH = "Nourish Your Soul With Veg Delights";
 export const SUB_TAGLINE = "Homemade Happiness";
 
 export const CONTACT_INFO = {
-  phone: "+1 (416) 771-6660",
+  phone: "+1 (437) 994-6660",
   instagramHandle: "@gurparsadcreations",
   instagramUrl: "https://www.instagram.com/gurparsadcreations/?hl=en",
   location: "Brampton, ON (Available in GTA)",

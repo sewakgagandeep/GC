@@ -70,7 +70,7 @@ const Gallery: React.FC = () => {
                         >
                             <img
                                 src={src}
-                                alt={`Gallery image ${index + 1}`}
+                                alt={`Gurparsad Creations Custom Cake Design ${index + 1} - Eggless Bakery Brampton`}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 loading="lazy"
                             />

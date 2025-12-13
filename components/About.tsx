@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/2 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform md:rotate-3 transition-transform hover:rotate-0 duration-500">
               <img
-                src="./images/our-story.png"
+                src="./images/our story.png"
                 alt="Gurparsad Creations Delights"
                 className="w-full h-auto object-cover"
               />

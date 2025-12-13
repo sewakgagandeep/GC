@@ -40,8 +40,8 @@ const AiIdeaGenerator: React.FC = () => {
           <div className="w-full md:w-1/2 space-y-4">
             <div>
               <label className="block text-sm font-bold text-stone-700 mb-1">Occasion</label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="e.g., Mom's 50th Birthday, Baby Shower"
                 className="w-full p-3 bg-stone-50 text-stone-800 placeholder-stone-400 border border-stone-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                 value={occasion}
@@ -50,7 +50,7 @@ const AiIdeaGenerator: React.FC = () => {
             </div>
             <div>
               <label className="block text-sm font-bold text-stone-700 mb-1">Preferred Flavor</label>
-              <select 
+              <select
                 className="w-full p-3 bg-stone-50 text-stone-800 border border-stone-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                 value={flavor}
                 onChange={(e) => setFlavor(e.target.value)}
@@ -59,22 +59,20 @@ const AiIdeaGenerator: React.FC = () => {
                 <option value="Vanilla">Vanilla</option>
                 <option value="Chocolate">Chocolate</option>
                 <option value="Pineapple">Pineapple</option>
-                <option value="Butterscotch">Butterscotch</option>
-                <option value="Black Forest">Black Forest</option>
                 <option value="Fruit Cake">Fresh Fruit</option>
               </select>
             </div>
             <div>
               <label className="block text-sm font-bold text-stone-700 mb-1">Any Preferences? (Optional)</label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="e.g., loves blue color, floral theme"
                 className="w-full p-3 bg-stone-50 text-stone-800 placeholder-stone-400 border border-stone-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
               />
             </div>
-            <button 
+            <button
               onClick={handleGenerate}
               disabled={loading || !occasion || !flavor}
               className="w-full py-3 bg-secondary text-white font-bold rounded-lg hover:bg-stone-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2 shadow-md"
